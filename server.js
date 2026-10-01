@@ -45,6 +45,9 @@ app.post('/api/watch-ad', (req, res) => {
     watched_ads: updatedUser.watched_ads
   });
 });
+app.get('/', (req, res) => {
+  res.send('Server is running successfully!');
+});
 
 const PORT = 3000;
 app.listen(PORT, () => {
